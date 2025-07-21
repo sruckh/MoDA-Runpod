@@ -1,32 +1,49 @@
-# MoDA: Multi-modal Diffusion Architecture for Talking-Head Generation
+# MoDA: Multi-modal Diffusion Architecture for Talking Head Generation
 
-MoDA is a unified framework that fuses audio, identity, emotion, and motion cues within a single diffusion process to synthesize photorealistic, expressive talking-head videos.
-
-<p align="center">
-  <img src="assets/moda_teaser.gif" width="720">
-</p>
-
----
-
-## Paper
-**MoDA: Multi-modal Diffusion Architecture for Talking-Head Generation**  
-• arXiv preprint: <https://arxiv.org/abs/XXXX.XXXXX>  
-• Project / demo page: <https://your-demo-link.com>
+**Authors:** Xinyang Li¹², Gen Li², Zhihui Lin¹³, Yichen Qian¹³ †, Gongxin Yao², Weinan Jia¹, Weihua Chen¹³, Fan Wang¹³  
+¹Xunguang Team, DAMO Academy, Alibaba Group  
+²Zhejiang University  
+³Hupan Lab  
+†Corresponding author: yichen.qyc@alibaba-inc.com, l_xyang@zju.edu.cn
 
 ---
 
-## Demo
+## 📖 Overview
 
-Try MoDA online: **<https://your-demo-link.com>**
-
-Upload a reference frame and an audio clip—MoDA will return a high-fidelity talking-head video in a few seconds.
+MoDA introduces a novel diffusion‐based framework that jointly models motion generation and neural rendering to produce realistic talking-head videos from a single portrait and arbitrary audio inputs. Key contributions include:  
+1. **Joint Parameter Space:** Bridges motion generation and neural rendering via a disentangled motion‐appearance representation, integrating audio, emotion, and identity conditions.  
+2. **Multi-modal Diffusion Architecture:** Enables deep interaction among noisy motion trajectories, speech audio, and auxiliary signals, significantly enhancing facial expressiveness and lip–sync accuracy. :contentReference[oaicite:0]{index=0}
 
 ---
 
-## Code ‑ Coming Soon
+## 🚀 Demo
 
-We are finalizing the source code, trained checkpoints, and evaluation scripts.  
-Please **star** ⭐ or **watch** 🔔 this repository to get notified when they are released.
+Try out the live demo here:  
+[▶️ Live MoDA Demo](https://your-demo-link.com)
 
-```text
-📅 ETA: Q4 2024
+---
+
+## 📂 Code
+
+The full implementation will be released soon. Stay tuned!  
+
+---
+
+## 📄 Paper
+
+Read the full preprint on arXiv:  
+[MoDA: Multi-modal Diffusion Architecture for Talking Head Generation](https://arxiv.org/abs/2507.03256) :contentReference[oaicite:1]{index=1}
+
+---
+
+## 📑 Citation
+
+If you use MoDA in your research, please cite:
+
+```bibtex
+@article{li2025moda,
+  title     = {MoDA: Multi-modal Diffusion Architecture for Talking Head Generation},
+  author    = {Li, Xinyang and Li, Gen and Lin, Zhihui and Qian, Yichen and Yao, Gongxin and Jia, Weinan and Chen, Weihua and Wang, Fan},
+  journal   = {arXiv preprint arXiv:2507.03256},
+  year      = {2025},
+}
