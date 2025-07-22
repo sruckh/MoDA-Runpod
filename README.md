@@ -7,12 +7,12 @@
 ³Hupan Lab  
 †Corresponding author: yichen.qyc@alibaba-inc.com, l_xyang@zju.edu.cn
 <div 
-</div>
 <br>
 <div align='center'>
     <a href='https://lixinyyang.github.io/MoDA.github.io/'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
     <a href='https://arxiv.org/abs/2507.03256'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 </div>
+
 ## &#x1F680; 📂 Code
 
 *The full implementation will be released soon. Stay tuned!  
