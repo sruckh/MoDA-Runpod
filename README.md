@@ -1,12 +1,12 @@
 <h1 align='center'>MoDA: Multi-modal Diffusion Architecture for Talking Head Generation</h1>
 
 <div align='center'>
-**Authors:** Xinyang Li¹², Gen Li², Zhihui Lin¹³, Yichen Qian¹³ †, Gongxin Yao², Weinan Jia¹, Weihua Chen¹³, Fan Wang¹³  
-¹Xunguang Team, DAMO Academy, Alibaba Group  
-²Zhejiang University  
-³Hupan Lab  
-†Corresponding author: yichen.qyc@alibaba-inc.com, l_xyang@zju.edu.cn
-<div 
+    **Authors:** Xinyang Li¹², Gen Li², Zhihui Lin¹³, Yichen Qian¹³ †, Gongxin Yao², Weinan Jia¹, Weihua Chen¹³, Fan Wang¹³  
+    ¹Xunguang Team, DAMO Academy, Alibaba Group  
+    ²Zhejiang University  
+    ³Hupan Lab  
+    †Corresponding author: yichen.qyc@alibaba-inc.com, l_xyang@zju.edu.cn
+</div>
 <br>
 <div align='center'>
     <a href='https://lixinyyang.github.io/MoDA.github.io/'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
@@ -38,3 +38,5 @@ If you use MoDA in your research, please cite:
   journal   = {arXiv preprint arXiv:2507.03256},
   year      = {2025},
 }
+}
+```
