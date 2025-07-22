@@ -1,11 +1,24 @@
 <h1 align='center'>MoDA: Multi-modal Diffusion Architecture for Talking Head Generation</h1>
 
-<div align='center'>
-    **Authors:** Xinyang Li¹², Gen Li², Zhihui Lin¹³, Yichen Qian¹³ †, Gongxin Yao², Weinan Jia¹, Weihua Chen¹³, Fan Wang¹³  
-    ¹Xunguang Team, DAMO Academy, Alibaba Group  
-    ²Zhejiang University  
-    ³Hupan Lab  
-    †Corresponding author: yichen.qyc@alibaba-inc.com, l_xyang@zju.edu.cn
+<div align="center">
+
+<strong>Authors</strong> <br><br>
+
+Xinyang&nbsp;Li<sup>1,2</sup>,&nbsp;
+Gen&nbsp;Li<sup>2</sup>,&nbsp;
+Zhihui&nbsp;Lin<sup>1,3</sup>,&nbsp;
+Yichen&nbsp;Qian<sup>1,3&nbsp;†</sup>,&nbsp;
+Gongxin&nbsp;Yao<sup>2</sup>,&nbsp;
+Weinan&nbsp;Jia<sup>1</sup>,&nbsp;
+Weihua&nbsp;Chen<sup>1,3</sup>,&nbsp;
+Fan&nbsp;Wang<sup>1,3</sup> <br><br>
+
+<sup>1</sup>Xunguang&nbsp;Team,&nbsp;DAMO&nbsp;Academy,&nbsp;Alibaba&nbsp;Group&nbsp;&nbsp;&nbsp;
+<sup>2</sup>Zhejiang&nbsp;University&nbsp;&nbsp;&nbsp;
+<sup>3</sup>Hupan&nbsp;Lab <br><br>
+
+<sup>†</sup>Corresponding authors: yichen.qyc@alibaba-inc.com,&nbsp;l_xyang@zju.edu.cn
+
 </div>
 <br>
 <div align='center'>
@@ -33,10 +46,9 @@ If you use MoDA in your research, please cite:
 
 ```bibtex
 @article{li2025moda,
-  title     = {MoDA: Multi-modal Diffusion Architecture for Talking Head Generation},
-  author    = {Li, Xinyang and Li, Gen and Lin, Zhihui and Qian, Yichen and Yao, Gongxin and Jia, Weinan and Chen, Weihua and Wang, Fan},
-  journal   = {arXiv preprint arXiv:2507.03256},
-  year      = {2025},
-}
+  title={MoDA: Multi-modal Diffusion Architecture for Talking Head Generation},
+  author={Li, Xinyang and Li, Gen and Lin, Zhihui and Qian, Yichen and Yao, GongXin and Jia, Weinan and Chen, Weihua and Wang, Fan},
+  journal={arXiv preprint arXiv:2507.03256},
+  year={2025}
 }
 ```
