@@ -29,7 +29,7 @@ Fan&nbsp;Wang<sup>1,3</sup> <br><br>
 
 ##  📂 Updates
 
-* [2025.08.07] 🔥 We release our inference [codes](https://github.com/lixinyyang/MoDA/) and [models]().
+* [2025.08.07] 🔥 We release our inference [codes](https://github.com/lixinyyang/MoDA/) and [models](https://huggingface.co/lixinyizju/moda/).
 
 ## ⚙️ Installation
 
