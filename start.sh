@@ -6,8 +6,8 @@ echo "Starting MoDA container initialization..."
 # Install Python 3.10 using deadsnakes PPA
 echo "Installing Python 3.10..."
 apt-get update && \
-apt-get install -y software-properties-common && \
-add-apt-repository ppa:deadsnakes/ppa && \
+apt-get install -y software-properties-common git && \
+add-apt-repository ppa:fkrull/deadsnakes && \
 apt-get update && \
 apt-get install -y python3.10 python3-pip ffmpeg
 
