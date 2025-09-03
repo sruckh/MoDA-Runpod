@@ -3,16 +3,16 @@ set -e
 
 echo "Starting MoDA container initialization..."
 
-# Install Python 3.10 using deadsnakes PPA
-echo "Installing Python 3.10..."
+# Install Python 3.11 using deadsnakes PPA
+echo "Installing Python 3.11..."
 apt-get update && \
 apt-get install -y software-properties-common git && \
-add-apt-repository ppa:fkrull/deadsnakes && \
+add-apt-repository ppa:deadsnakes/ppa && \
 apt-get update && \
-apt-get install -y python3.10 python3-pip ffmpeg
+apt-get install -y python3.11 python3-pip ffmpeg
 
-# Set Python 3.10 as default
-update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
+# Set Python 3.11 as default
+update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
 
 echo "Python installation complete"
 
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 # Install flash attention
 echo "Installing flash attention..."
-pip install https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.0.post1/flash_attn-2.7.0.post1+cu12torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+pip install https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.0.post1/flash_attn-2.7.0.post1+cu12torch2.4cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
 
 echo "Installation complete. Starting application..."
 
