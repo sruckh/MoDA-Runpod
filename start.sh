@@ -10,16 +10,26 @@ export TZ=UTC
 # Configure timezone non-interactively
 ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-# Install Python 3.11 using deadsnakes PPA
-echo "Installing Python 3.11..."
+# Install Python 3.11 and build dependencies
+echo "Installing Python 3.11 and build tools..."
 apt-get update && \
-apt-get install -y --no-install-recommends software-properties-common git && \
+apt-get install -y --no-install-recommends \
+    software-properties-common \
+    git \
+    build-essential \
+    cmake \
+    libopencv-dev \
+    python3.11-dev \
+    python3.11-distutils && \
 add-apt-repository ppa:deadsnakes/ppa -y && \
 apt-get update && \
 apt-get install -y --no-install-recommends python3.11 python3-pip ffmpeg
 
 # Set Python 3.11 as default
 update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
+
+# Clean up package cache
+apt-get clean && rm -rf /var/lib/apt/lists/*
 
 echo "Python installation complete"
 
@@ -36,8 +46,18 @@ if [ ! -d "MoDA" ]; then
 fi
 cd MoDA
 
-# Install requirements
+# Install requirements with special handling for problematic packages
 echo "Installing requirements..."
+# Upgrade pip and install wheel first
+pip install --upgrade pip wheel setuptools
+
+# Try to install insightface separately with fallback
+echo "Installing insightface..."
+pip install insightface==0.7.3 || \
+pip install --no-build-isolation insightface==0.7.3 || \
+pip install --no-deps insightface==0.7.3
+
+# Install remaining requirements
 pip install -r requirements.txt
 
 # Install flash attention
