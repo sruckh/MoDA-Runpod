@@ -3,13 +3,20 @@ set -e
 
 echo "Starting MoDA container initialization..."
 
+# Set environment variables for non-interactive installation
+export DEBIAN_FRONTEND=noninteractive
+export TZ=UTC
+
+# Configure timezone non-interactively
+ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Install Python 3.11 using deadsnakes PPA
 echo "Installing Python 3.11..."
 apt-get update && \
-apt-get install -y software-properties-common git && \
-add-apt-repository ppa:deadsnakes/ppa && \
+apt-get install -y --no-install-recommends software-properties-common git && \
+add-apt-repository ppa:deadsnakes/ppa -y && \
 apt-get update && \
-apt-get install -y python3.11 python3-pip ffmpeg
+apt-get install -y --no-install-recommends python3.11 python3-pip ffmpeg
 
 # Set Python 3.11 as default
 update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
