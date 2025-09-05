@@ -1,0 +1,30 @@
+# Ignore untracked files that are causing source control issues
+README.md
+app.py
+requirements.txt
+
+# Ignore directories
+configs/
+moda-repo/
+src/
+
+# Common Python files to ignore
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.venv
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
