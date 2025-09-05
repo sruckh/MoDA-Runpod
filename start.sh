@@ -51,14 +51,20 @@ echo "Installing requirements..."
 # Upgrade pip and install wheel first
 pip install --upgrade pip wheel setuptools
 
+# Install modern huggingface-hub to avoid CLI deprecation issues
+echo "Installing modern Hugging Face Hub..."
+pip install --upgrade huggingface-hub
+
 # Try to install insightface separately with fallback
 echo "Installing insightface..."
 pip install insightface==0.7.3 || \
 pip install --no-build-isolation insightface==0.7.3 || \
 pip install --no-deps insightface==0.7.3
 
-# Install remaining requirements
-pip install -r requirements.txt
+# Install remaining requirements (skip if huggingface-hub conflicts)
+echo "Installing remaining requirements..."
+pip install -r requirements.txt || \
+echo "Some packages may have conflicts, continuing with available packages..."
 
 # Install flash attention
 echo "Installing flash attention..."
