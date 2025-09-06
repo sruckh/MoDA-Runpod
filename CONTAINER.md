@@ -34,20 +34,12 @@ docker run --gpus all -p 8000:8000 gemneye/moda-runpod:latest
 ### Base Image
 - `nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04`
 
-### Installed Dependencies
-- Python 3.10 (via deadsnakes PPA)
-- PyTorch 2.4.1 with CUDA 12.4 support
-- Flash Attention 2.7.0
-- FFmpeg for media processing
-- All requirements from the original MoDA repository
-
 ### Runtime Installation Process
-1. Python 3.10 installation and configuration
-2. PyTorch installation with CUDA support
-3. MoDA repository cloning from GitHub
-4. Requirements installation
-5. Flash Attention wheel installation
-6. Application startup
+1. PyTorch 2.4.1 installation with CUDA 12.4 support
+2. MoDA repository cloning from GitHub
+3. Requirements installation from requirements.txt
+4. Flash Attention 2.7.0 wheel installation
+5. Application startup
 
 ## Architecture Support
 
